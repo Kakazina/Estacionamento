@@ -1,0 +1,79 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #082136; /* cor principal */
+      margin: 0;
+      padding: 0;
+      color: #fff;
+       }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #ffffff;
+      color: #082136;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    }
+    h2 {
+      text-align: center;
+      color: #082136;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #082136;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background: #0a2f4d;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background: #082136;
+      color: #fff;
+    }
+    .remove-btn {
+      background: #dc3545;
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+    }
+    .remove-btn:hover {
+      background: #a71d2a;
+    }
+    .success-message {
+      display: none;
+      margin-top: 15px;
+      padding: 10px;
+      background: #28a745;
+      color: #fff;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: bold;
+    }
+  

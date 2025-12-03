@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Estacionamento</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <!-- Tela de Login -->
+  <div class="container" id="loginPage">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="usuario">Usuário:</label>
+      <input type="text" id="usuario" required>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" required>
+
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+
+  <!-- Tela de Cadastro de Veículos -->
+  <div class="container" id="parkingPage" style="display:none;">
+    <h2>Controle de Estacionamento</h2>
+    <form id="formVeiculo">
+      <label for="placa">Placa:</label>
+      <input type="text" id="placa" required>
+
+      <label for="tipo">Tipo de Veículo:</label>
+      <select id="tipo" required>
+        <option value="">Selecione</option>
+        <option value="Carro">Carro</option>
+        <option value="Moto">Moto</option>
+        <option value="Van">Van</option>
+        <option value="Caminhão">Caminhão</option>
+        <option value="Outro">Outro</option>
+      </select>
+
+      <label for="nome">Nome do Veículo:</label>
+      <input type="text" id="nome" placeholder="Ex: Corolla, CG 160, Sprinter" required>
+
+      <label for="entrada">Horário de Entrada:</label>
+      <input type="time" id="entrada" required>
+
+      <button type="submit">Cadastrar Veículo</button>
+    </form>
+
+    <!-- Mensagem de sucesso -->
+    <div class="success-message" id="successMessage">
+      Veículo cadastrado com sucesso!
+    </div>
+
+    <table id="tabelaVeiculos">
+      <thead>
+        <tr>
+          <th>Placa</th>
+          <th>Tipo</th>
+          <th>Nome</th>
+          <th>Entrada</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Veículos cadastrados aparecerão aqui -->
+      </tbody>
+    </table>
+  </div>
+
+ 
+<script src="script.js"></script>
+</body>
+</html>
